@@ -1,0 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tlogtenb <tlogtenb@student.s19.be>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/09/03 21:18:06 by tlogtenb          #+#    #+#             */
+/*   Updated: 2025/09/03 21:18:06 by tlogtenb         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft_bonus.h"
+#include <stdlib.h>
+
+t_list	*ft_lstlast(t_list *lst)
+{
+	if (!lst)
+		return (NULL);
+	while (lst->next != NULL)
+		lst = lst->next;
+	return (lst);
+}
