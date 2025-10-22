@@ -15,6 +15,7 @@
 # define LIBFT_BONUS_H
 
 # include <stddef.h>
+# include <stdlib.h>
 
 typedef struct s_list
 {

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 static size_t	ft_do_something(const char *big, const char *little,
 	size_t len, size_t *i)

@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
-static int	ft_strlen(const char *s)
+static int	ft_strlen_local(const char *s)
 {
 	int	i;
 
@@ -28,7 +28,7 @@ char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
 
-	i = ft_strlen(s);
+	i = ft_strlen_local(s);
 	while (i >= 0)
 	{
 		if (s[i] == (char)c)

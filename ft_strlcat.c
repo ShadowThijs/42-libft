@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
-static size_t	ft_strlen(const char *s)
+static size_t	ft_strlen_local(const char *s)
 {
 	size_t	i;
 
@@ -29,11 +29,11 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	dlen;
 
 	if (size == 0)
-		return (ft_strlen(src));
+		return (ft_strlen_local(src));
 	dlen = 0;
 	while (dlen < size && dst[dlen])
 		dlen++;
-	ret = dlen + ft_strlen(src);
+	ret = dlen + ft_strlen_local(src);
 	if (size <= dlen)
 		return (ret);
 	i = 0;

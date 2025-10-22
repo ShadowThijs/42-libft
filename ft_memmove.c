@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 static void	ft_move(unsigned char *d, const unsigned char *s, size_t n)
 {
