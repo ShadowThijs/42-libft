@@ -6,7 +6,7 @@
 /*   By: tlogtenb <tlogtenb@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/01 23:55:40 by tlogtenb          #+#    #+#             */
-/*   Updated: 2025/09/01 23:55:40 by tlogtenb         ###   ########.fr       */
+/*   Updated: 2025/10/22 16:09:49 by tlogtenb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,15 +25,15 @@ static size_t	count_words(char const *s, char c)
 	words = 0;
 	while (s[i])
 	{
-	  while (s[i] && s[i] == c)
-      i++;
-    if (s[i])
-    {
-      words++;
-      while (s[i] && s[i] != c)
-        i++;
-    }
-  }
+		while (s[i] && s[i] == c)
+			i++;
+		if (s[i])
+		{
+			words++;
+			while (s[i] && s[i] != c)
+				i++;
+		}
+	}
 	return (words);
 }
 
