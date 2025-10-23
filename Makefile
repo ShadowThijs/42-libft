@@ -55,10 +55,10 @@ $(NAME): $(MY_OBJECTS)
 	ar rcs $(NAME) $(MY_OBJECTS)
 
 %.o: %.c
-	$(CC) $(CFLAGS) -O2 -funroll-loops -c $< -o $@
+	$(CC) $(CFLAGS) -fPIC -c $< -o $@
 
 bonus: all $(BONUS_OBJECTS)
-	ar r $(NAME) $(BONUS_OBJECTS)
+	ar rcs $(NAME) $(BONUS_OBJECTS)
 
 clean:
 	rm -f $(MY_OBJECTS) $(BONUS_OBJECTS)
